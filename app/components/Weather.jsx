@@ -32,7 +32,7 @@ var Weather = React.createClass({
     function renderMessage() {
       // debugger;
       if(isLoading) {
-        return <h3>Fetching the weather for you...</h3>;
+        return <h3 className="text-center">Fetching the weather for you...</h3>;
       } else if (temp != null && location != null) {
         return <WeatherMessage location={location} temp={temp}/>;
       }
@@ -40,7 +40,7 @@ var Weather = React.createClass({
     debugger;
     return(
       <div>
-        {/* <div className="text-center"><img {src="images/weatherFetch.png"}/></div> */}
+        <h2 className="text-center">Get Weather</h2>
         <WeatherForm onSearch={this.handleSearch}/>
         {renderMessage()}
       </div>
