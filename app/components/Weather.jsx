@@ -37,10 +37,10 @@ var Weather = React.createClass({
         return <WeatherMessage location={location} temp={temp}/>;
       }
     }
-
+    debugger;
     return(
       <div>
-        <h3>Weather Component</h3>
+        {/* <div className="text-center"><img {src="images/weatherFetch.png"}/></div> */}
         <WeatherForm onSearch={this.handleSearch}/>
         {renderMessage()}
       </div>

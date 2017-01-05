@@ -3,8 +3,18 @@ var React = require('react');
 var About = (props) => {
   return (
     <div>
-      <h3>About!!</h3>
-      <p>Welcome to the about page!</p>
+      <h2 className="text-center">About!!</h2>
+      <p>WeatherFetch is handly tool built with React that gives you the weater of anywhere in the world</p>
+      <p>Here is the link to my portfolio</p>
+      <ul>
+        <li>
+          <a href="http://chibuzouguru.com/">Chibuzo Uguru</a> This is my website
+        </li>
+        <li>
+          <a href="https://facebook.github.io/react/">React</a> This is the React website
+
+        </li>
+      </ul>
     </div>
   )
 };
