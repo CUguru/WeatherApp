@@ -7,7 +7,7 @@ var ErrorModal = React.createClass({
   },
   render: function() {
     return (
-      <div id="error-modal" className="reveal tiny text-center" data-reveal="">
+      <div id="error-modal">
         <h5>Some Title</h5>
         <p>The error message</p>
         <p>
@@ -20,3 +20,5 @@ var ErrorModal = React.createClass({
   }
 });
 module.exports = ErrorModal;
+
+// remember to add in code for the modal once the styling for the rest of the app is finished

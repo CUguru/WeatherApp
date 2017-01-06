@@ -3,10 +3,10 @@ var React = require('react');
 var About = (props) => {
   return (
     <div>
-      <h2 className="text-center page-title">About!!</h2>
+      <h2 className="page-title">About!!</h2>
       <p>WeatherFetch is handly tool built with React that gives you the weater of anywhere in the world</p>
       <p>Here is the link to my portfolio</p>
-      <ul>
+      <ul className="about-links">
         <li>
           <a href="http://chibuzouguru.com/">Chibuzo Uguru</a> This is my website
         </li>
