@@ -1,0 +1,44 @@
+$space-large: 2.5rem;
+$box-radius: 10px;
+
+
+.page-title {
+  margin-top: $space-large;
+  margin-bottom: $space-large;
+}
+
+input[type=text] {
+  border: 3px solid #fee187;
+  border-radius: $box-radius;
+  box-shadow: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+input[type=text]:focus {
+  border:2px solid #fee187;
+}
+
+
+.submit-button {
+  background-color: #fee187;
+  color: #fff;
+  border-radius: $box-radius;
+  padding: 15px 30px;
+}
+
+.submit-button:active,
+.submit-button:hover,
+.submit-button:visited {
+  background-color: #fee187;
+  opacity: .8;
+}
+
+
+.displayed-message,
+.is-loading {
+  font-size: 0.9em;
+  font-family: 'Quicksand';
+  color: #b6b6b6;
+  font-weight: bold;
+}

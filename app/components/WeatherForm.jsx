@@ -1,4 +1,5 @@
 var React = require('react');
+var Weather = require('Weather');
 
 var WeatherForm = React.createClass({
   onFormSubmit: function(e) {
@@ -10,6 +11,8 @@ var WeatherForm = React.createClass({
       this.refs.location.value = '';
       this.props.onSearch(location);
     }
+
+    // setTimeout(function(){window.location.href = 'Weather';}, 2000);
   },
   render: function() {
     return(
@@ -19,7 +22,7 @@ var WeatherForm = React.createClass({
             <input type='text' ref="location" placeholder="Enter City"/>
           </div>
           <div>
-            <button className="button expanded hollow">Get Weather</button>
+            <button className="submit-button columns large-4">Get Weather</button>
           </div>
         </form>
       </div>
