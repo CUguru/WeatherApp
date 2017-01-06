@@ -4,7 +4,7 @@ $no-decoration: none;
 $vertical-padding: 20px;
 $font-family: 'Quicksand';
 $nav-padding: 15px;
-
+$main-color: #fee187;
 
 /****** MAIN CONTAINER STYLING ******/
 .main-container {
@@ -23,11 +23,13 @@ li {
 .nav-links li {
   display: inline-block;
   padding: 0 $nav-padding;
+  color: $main-color;
 }
 
 a {
   text-decoration: $no-decoration;
   font-family: $font-family;
+  color: $main-color;
 }
 
 .about-links li a {
@@ -42,7 +44,7 @@ input[type=text] {
   width: 20%;
   min-width: 300px;
   max-width: 400px;
-  border: 3px solid #fee187;
+  border: 3px solid $main-color;
   border-radius: $box-radius;
   box-shadow: none;
   padding-top: $vertical-padding;
@@ -50,7 +52,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-  border:2px solid #fee187;
+  border:2px solid $main-color;
 }
 
 input[type=text]::placeholder {
@@ -59,7 +61,7 @@ input[type=text]::placeholder {
 }
 
 .submit-button {
-  background-color: #fee187;
+  background-color: $main-color;
   color: #fff;
   border: none;
   border-radius: $box-radius;
@@ -72,10 +74,9 @@ input[type=text]::placeholder {
 .submit-button:active,
 .submit-button:hover,
 .submit-button:visited {
-  background-color: #fee187;
+  background-color: $main-color;
   opacity: .8;
 }
-
 
 .displayed-message,
 .is-loading {
